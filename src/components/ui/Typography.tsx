@@ -83,7 +83,7 @@ export function Prose({ className, children }: ProseProps) {
         'prose prose-slate max-w-none',
         'prose-headings:font-serif prose-headings:font-medium prose-headings:tracking-tight',
         'prose-p:text-[#4A4A4A] prose-p:leading-relaxed',
-        'prose-a:text-[#2D4A3E] prose-a:no-underline hover:prose-a:underline',
+        'prose-a:text-[#3B78C6] prose-a:no-underline hover:prose-a:underline',
         'prose-strong:font-medium prose-strong:text-[#1A1A1A]',
         className
       )}

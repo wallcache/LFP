@@ -7,8 +7,6 @@ import { cn } from '@/lib/utils';
 const categories = [
   { handle: '', title: 'All' },
   { handle: 'prints', title: 'Prints' },
-  { handle: 'bookmarks', title: 'Bookmarks' },
-  { handle: 't-shirts', title: 'T-Shirts' },
   { handle: 'books', title: 'Books' },
 ];
 

@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Container } from './Container';
@@ -12,7 +11,6 @@ import { cn } from '@/lib/utils';
 const navigation = [
   { name: 'Shop', href: '/shop', annotation: 'underline' as const },
   { name: 'About', href: '/about', annotation: 'circle' as const },
-  { name: 'Sustainability', href: '/designed-to-last', annotation: 'underline' as const },
 ];
 
 // Random marginalia comments for nav hover
@@ -130,7 +128,7 @@ function NavMarginNote({ show }: { show: boolean }) {
 
   return (
     <span
-      className="absolute left-full ml-2 text-[#2D4A3E] whitespace-nowrap pointer-events-none hidden lg:block"
+      className="absolute left-full ml-2 text-[#3B78C6] whitespace-nowrap pointer-events-none hidden lg:block"
       style={{
         fontFamily: 'Handwriting, cursive',
         fontSize: '1.2rem',
@@ -150,7 +148,6 @@ export function Header() {
   const { totalQuantity, openCart } = useCart();
   const [hoveredNav, setHoveredNav] = useState<string | null>(null);
   const [cartHovered, setCartHovered] = useState(false);
-  const [isLogoHovered, setIsLogoHovered] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-[#FAFAF8]">
@@ -165,30 +162,9 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="logo-hover relative inline-block"
-            onMouseEnter={() => setIsLogoHovered(true)}
-            onMouseLeave={() => setIsLogoHovered(false)}
+            className="relative inline-block font-serif text-lg md:text-xl text-[#3B78C6] tracking-tight transition-all duration-300 hover:opacity-70 hover:scale-[1.02]"
           >
-            <div className="relative h-5 md:h-6 w-auto">
-              <Image
-                src="/logos/twAsset 112.png"
-                alt="Long Form Press"
-                width={400}
-                height={80}
-                className={`h-5 md:h-6 w-auto transition-opacity duration-300 ease-in-out ${isLogoHovered ? 'opacity-0' : 'opacity-100'}`}
-                priority
-                unoptimized
-              />
-              <Image
-                src="/logos/twAsset 122.png"
-                alt="Long Form Press"
-                width={400}
-                height={80}
-                className={`h-5 md:h-6 w-auto absolute top-0 left-0 transition-opacity duration-300 ease-in-out ${isLogoHovered ? 'opacity-100' : 'opacity-0'}`}
-                priority
-                unoptimized
-              />
-            </div>
+            Long Form Press
           </Link>
 
           {/* Navigation */}
@@ -222,7 +198,7 @@ export function Header() {
             >
               <FlipText>Cart</FlipText>
               {totalQuantity > 0 && (
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#2D4A3E] text-xs text-[#FAFAF8] transition-transform hover:scale-110">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#3B78C6] text-xs text-[#FAFAF8] transition-transform hover:scale-110">
                   {totalQuantity}
                 </span>
               )}

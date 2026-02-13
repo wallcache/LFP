@@ -44,7 +44,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
       {/* Details */}
       <div className="space-y-1">
-        <h3 className="font-serif text-lg text-[#1A1A1A] transition-all duration-300 group-hover:text-[#2D4A3E] group-hover:translate-x-1">
+        <h3 className="font-serif text-lg text-[#1A1A1A] transition-all duration-300 group-hover:text-[#3B78C6] group-hover:translate-x-1">
           {product.title}
         </h3>
         <p className="text-sm text-[#8A8A8A] transition-all duration-300 group-hover:text-[#4A4A4A]">

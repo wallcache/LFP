@@ -12,7 +12,7 @@ export function Footer() {
       <Container>
         <div className="flex flex-col items-center justify-between gap-6 py-12 md:flex-row md:py-16">
           {/* Tagline */}
-          <p className="font-serif text-lg italic text-[#4A4A4A]">
+          <p className="text-lg italic text-[#4A4A4A]">
             Read slowly or die trying.
           </p>
 

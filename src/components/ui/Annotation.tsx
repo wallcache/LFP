@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 
 // Colors
-const HIGHLIGHT_YELLOW = '#E8FF00';
+const HIGHLIGHT_BLUE = 'rgba(59, 120, 198, 0.25)';
 const INK_DARK = '#1A1A1A';
-const MARGIN_GREEN = '#2D4A3E';
+const MARGIN_BLUE = '#3B78C6';
 
 // Handwritten SVG paths from /public/fonts/svg/
 const ARROW1_PATH = "M996.782,249.922c-52.669,5.836-105.287,12.24-158.054,16.993-9.65.869-28.438-4.882-28.473-7.752-.196-16.346,6.776-29.506,26.599-31.531,46.451-4.747,92.765-10.844,139.222-15.516,32.749-3.293,65.618-5.612,98.483-7.471,21.794-1.233,29.04,9.961,19.125,29.074-7.906,15.24-17.025,30.432-28.369,43.188-26.776,30.109-54.677,59.283-83.371,87.57-6.203,6.115-17.658,6.902-26.693,10.143,2.312-9.956,1.87-21.991,7.497-29.443,12.514-16.573,28.066-30.852,45.731-49.628-8.66,0-12.84-1.052-16.219.15-201.126,71.572-393.187,160.312-559.897,296.805-127.538,104.421-229.004,228.714-291.439,382.741-2.382,5.876-4.622,12.806-9.156,16.541-4.831,3.978-12.312,4.739-18.636,6.904-1.505-5.717-4.785-11.667-4.074-17.093.92-7.024,4.938-13.668,7.77-20.413,81.275-193.542,216.884-341.771,386.284-461.366,145.426-102.669,306.232-175,472.385-236.463,7.495-2.772,14.995-5.528,22.493-8.292-.403-1.713-.805-3.427-1.208-5.14Z";
@@ -286,7 +286,7 @@ export function AnnotatedText({
   const animationRef = useRef<NodeJS.Timeout | null>(null);
 
   // Default color: yellow for highlight, dark ink for everything else
-  const effectiveColor = color ?? (annotation === 'highlight' ? HIGHLIGHT_YELLOW : INK_DARK);
+  const effectiveColor = color ?? (annotation === 'highlight' ? HIGHLIGHT_BLUE : INK_DARK);
 
   const startAnimation = useCallback((startPhase: 'draw-in' | 'draw-out' = 'draw-in') => {
     if (animationRef.current) clearInterval(animationRef.current);
@@ -457,7 +457,7 @@ export function AnnotatedText({
           <span
             className="absolute inset-0 -mx-1 pointer-events-none"
             style={{
-              background: HIGHLIGHT_YELLOW,
+              background: HIGHLIGHT_BLUE,
               opacity: 0.4,
               clipPath: clipProgress,
               transform: 'skewX(-3deg)',
@@ -606,7 +606,7 @@ export function MarginNote({
   };
 
   const posStyles = getPositionStyles();
-  const textColor = color === 'light' ? '#FAFAF8' : '#2D4A3E';
+  const textColor = color === 'light' ? '#FAFAF8' : '#3B78C6';
 
   return (
     <span
@@ -668,7 +668,7 @@ export function ScatteredNote({
     return () => observer.disconnect();
   }, [delay]);
 
-  const textColor = color === 'light' ? '#FAFAF8' : '#2D4A3E';
+  const textColor = color === 'light' ? '#FAFAF8' : '#3B78C6';
 
   return (
     <span
@@ -699,7 +699,7 @@ interface HandwrittenStarProps {
   variant?: 1 | 2;
 }
 
-export function HandwrittenStar({ x, y, delay = 0, size = 'md', color = MARGIN_GREEN, variant = 1 }: HandwrittenStarProps) {
+export function HandwrittenStar({ x, y, delay = 0, size = 'md', color = MARGIN_BLUE, variant = 1 }: HandwrittenStarProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -768,7 +768,7 @@ interface HandwrittenArrowProps {
   size?: 'sm' | 'md' | 'lg';
 }
 
-export function HandwrittenArrow({ x, y, direction = 'right', delay = 0, color = MARGIN_GREEN, variant = 1, size = 'md' }: HandwrittenArrowProps) {
+export function HandwrittenArrow({ x, y, direction = 'right', delay = 0, color = MARGIN_BLUE, variant = 1, size = 'md' }: HandwrittenArrowProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -844,7 +844,7 @@ interface HandwrittenExclamationProps {
   color?: string;
 }
 
-export function HandwrittenExclamation({ x, y, count = 1, delay = 0, color = MARGIN_GREEN }: HandwrittenExclamationProps) {
+export function HandwrittenExclamation({ x, y, count = 1, delay = 0, color = MARGIN_BLUE }: HandwrittenExclamationProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [angle] = useState(() => getRandomAngle());
@@ -907,7 +907,7 @@ interface HandwrittenQuestionProps {
   color?: string;
 }
 
-export function HandwrittenQuestion({ x, y, count = 1, delay = 0, color = MARGIN_GREEN }: HandwrittenQuestionProps) {
+export function HandwrittenQuestion({ x, y, count = 1, delay = 0, color = MARGIN_BLUE }: HandwrittenQuestionProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [angle] = useState(() => getRandomAngle());

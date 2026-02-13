@@ -13,21 +13,19 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import { AnnotatedText, MarginNote, ScatteredNote } from "@/components/ui/Annotation";
 
 const categoryImages: Record<string, string> = {
-  prints: "/images/d074f7fd4b72671e73abae789d48d926.jpg",
-  bookmarks: "/images/f337571e50ab99eb0d126230b6c9e215.jpg",
-  "t-shirts": "/images/49b59d5866a63a2fe0bb03ea05ce649d.jpg",
-  books: "/images/41e893d89a5edab55a6cf30298981869.jpg",
+  prints: "/site_photos/fictionordeath.jpg",
+  books: "/site_photos/book_MODBDYSID.jpg",
 };
 
 export default function Home() {
-  const featuredProducts = getFeaturedProducts(4);
+  const featuredProducts = getFeaturedProducts(6);
 
   return (
     <>
       <HeroSection />
 
       {/* Tagline Band */}
-      <section className="bg-[#2D4A3E] text-[#FAFAF8] py-6 relative overflow-visible">
+      <section className="bg-[#3B78C6] text-[#FAFAF8] py-6 relative overflow-visible">
         <Container>
           <p className="text-center font-serif text-lg md:text-xl italic relative">
             &ldquo;The Long Read, The <AnnotatedText annotation="circle" delay={1300} color="#FAFAF8">Short</AnnotatedText> Life.&rdquo;
@@ -56,7 +54,7 @@ export default function Home() {
               </Link>
             </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 stagger-children">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 stagger-children">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -100,8 +98,8 @@ export default function Home() {
                   We make stuff for readers who <AnnotatedText annotation="highlight" delay={400}>finish the book</AnnotatedText>. Who&apos;ve argued about <AnnotatedText annotation="underline" delay={500}>translations</AnnotatedText>. Who have <AnnotatedText annotation="circle" delay={600}>Opinions</AnnotatedText> about adaptations. Who are, frankly, <AnnotatedText annotation="highlight" delay={650}>a bit much</AnnotatedText> at dinner parties.
                   <MarginNote side="left" delay={700} random />
                 </p>
-                <p className="font-serif text-xl italic text-[#2D4A3E] relative">
-                  Yes, we&apos;re <AnnotatedText annotation="circle" delay={750} color="#2D4A3E">pretentious</AnnotatedText>. But we&apos;ve <AnnotatedText annotation="highlight" delay={800}>earned it</AnnotatedText>. And if you&apos;re here, so have you.
+                <p className="text-lg italic text-[#3B78C6] relative">
+                  Yes, we&apos;re <AnnotatedText annotation="circle" delay={750} color="#3B78C6">pretentious</AnnotatedText>. But we&apos;ve <AnnotatedText annotation="highlight" delay={800}>earned it</AnnotatedText>. And if you&apos;re here, so have you.
                   <MarginNote side="right" delay={850} random />
                 </p>
               </div>
@@ -116,7 +114,7 @@ export default function Home() {
               Shop by Category
             </AnimateWords>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 stagger-children">
+          <div className="grid grid-cols-2 gap-4 md:gap-6 stagger-children max-w-3xl mx-auto">
             {categories.map((category) => (
               <Link
                 key={category.handle}
@@ -151,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 md:py-32 bg-[#2D4A3E] text-[#FAFAF8] relative overflow-visible">
+      <section className="py-20 md:py-32 bg-[#3B78C6] text-[#FAFAF8] relative overflow-visible">
         <ScatteredNote x="8%" y="25%" delay={300} color="light" random />
         <ScatteredNote x="88%" y="60%" delay={600} color="light" random />
         <div className="absolute inset-0 opacity-20">
@@ -285,12 +283,12 @@ export default function Home() {
                     <input
                       type="email"
                       placeholder="Your email"
-                      className="flex-1 px-4 py-3 bg-[#FAFAF8]/5 border border-[#FAFAF8]/20 rounded-lg text-[#FAFAF8] placeholder:text-[#FAFAF8]/50 focus:outline-none focus:border-[#2D4A3E] focus:shadow-[0_0_20px_rgba(45,74,62,0.3)] transition-all"
+                      className="flex-1 px-4 py-3 bg-[#FAFAF8]/5 border border-[#FAFAF8]/20 rounded-lg text-[#FAFAF8] placeholder:text-[#FAFAF8]/50 focus:outline-none focus:border-[#3B78C6] focus:shadow-[0_0_20px_rgba(59,120,198,0.3)] transition-all"
                     />
                     <MagneticButton
                       type="submit"
                       variant="dark"
-                      className="px-8 py-3 bg-[#2D4A3E] text-[#FAFAF8] text-sm tracking-wide rounded-lg"
+                      className="px-8 py-3 bg-[#3B78C6] text-[#FAFAF8] text-sm tracking-wide rounded-lg"
                     >
                       Subscribe
                     </MagneticButton>

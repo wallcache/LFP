@@ -55,7 +55,7 @@ export function Marginalia({
       ref={ref}
       className={cn(
         'absolute top-0 whitespace-nowrap pointer-events-none hidden md:inline-block',
-        'text-[#2D4A3E] text-lg md:text-xl',
+        'text-[#3B78C6] text-lg md:text-xl',
         className
       )}
       style={{

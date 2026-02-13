@@ -69,8 +69,8 @@ export default function AboutPage() {
                 <MarginNote side="right" delay={500} random />
               </p>
               <div className="pt-4 relative">
-                <p className="font-serif text-2xl italic text-[#2D4A3E] relative">
-                  &ldquo;Because you didn&apos;t <AnnotatedText annotation="highlight" delay={950}>sparknotes</AnnotatedText> your way through <AnnotatedText annotation="underline" delay={1000} color="#2D4A3E">Dostoevsky</AnnotatedText>.&rdquo;
+                <p className="font-serif text-2xl italic text-[#3B78C6] relative">
+                  &ldquo;Because you didn&apos;t <AnnotatedText annotation="highlight" delay={950}>sparknotes</AnnotatedText> your way through <AnnotatedText annotation="underline" delay={1000} color="#3B78C6">Dostoevsky</AnnotatedText>.&rdquo;
                   <MarginNote side="right" delay={500} random />
                 </p>
               </div>
@@ -148,22 +148,22 @@ export default function AboutPage() {
 
               {/* What we are */}
               <div className="relative">
-                <h3 className="font-serif text-xl mb-6 text-[#2D4A3E] relative">
-                  <AnnotatedText annotation="circle" delay={600} color="#2D4A3E">We Are</AnnotatedText>
+                <h3 className="font-serif text-xl mb-6 text-[#3B78C6] relative">
+                  <AnnotatedText annotation="circle" delay={600} color="#3B78C6">We Are</AnnotatedText>
                   <HandwrittenArrow x="105%" y="20%" delay={700} direction="right" size="lg" />
                 </h3>
                 <ul className="space-y-4 text-[#4A4A4A]">
                   <li className="flex items-start gap-3 relative">
-                    <span className="text-[#2D4A3E]">✓</span>
+                    <span className="text-[#3B78C6]">✓</span>
                     <span><AnnotatedText annotation="highlight" delay={750}>Literate and proud</AnnotatedText>, but <AnnotatedText annotation="underline" delay={800}>aware it&apos;s a bit ridiculous</AnnotatedText></span>
                   </li>
                   <li className="flex items-start gap-3 relative">
-                    <span className="text-[#2D4A3E]">✓</span>
+                    <span className="text-[#3B78C6]">✓</span>
                     <span>Read the <AnnotatedText annotation="highlight" delay={850}>difficult books</AnnotatedText> <em>and</em> enjoyed them (mostly)</span>
                     <MarginNote side="right" delay={500} random />
                   </li>
                   <li className="flex items-start gap-3 relative">
-                    <span className="text-[#2D4A3E]">✓</span>
+                    <span className="text-[#3B78C6]">✓</span>
                     <span>Self-deprecating about being &ldquo;<AnnotatedText annotation="circle" delay={900}>that person</AnnotatedText>,&rdquo; but unapologetic about taste</span>
                     <MarginNote side="right" delay={500} random />
                   </li>
@@ -215,9 +215,9 @@ export default function AboutPage() {
                 <MarginNote side="right" delay={500} random />
                 <MarginNote side="right" delay={500} random />
               </p>
-              <p className="font-serif text-xl italic text-[#2D4A3E] relative">
-                But <AnnotatedText annotation="underline" delay={950} color="#2D4A3E">never sneer</AnnotatedText> at someone reading their <AnnotatedText annotation="highlight" delay={980}>first classic</AnnotatedText>.
-                The joke is always &ldquo;we&apos;re ridiculous, but <AnnotatedText annotation="circle" delay={1000} color="#2D4A3E">the books are actually good</AnnotatedText>.&rdquo;
+              <p className="font-serif text-xl italic text-[#3B78C6] relative">
+                But <AnnotatedText annotation="underline" delay={950} color="#3B78C6">never sneer</AnnotatedText> at someone reading their <AnnotatedText annotation="highlight" delay={980}>first classic</AnnotatedText>.
+                The joke is always &ldquo;we&apos;re ridiculous, but <AnnotatedText annotation="circle" delay={1000} color="#3B78C6">the books are actually good</AnnotatedText>.&rdquo;
                 <MarginNote side="right" delay={500} random />
               </p>
             </div>
@@ -226,7 +226,7 @@ export default function AboutPage() {
       </section>
 
       {/* Quote Band with Hemingway */}
-      <section className="relative py-16 bg-[#2D4A3E] text-[#FAFAF8] overflow-hidden">
+      <section className="relative py-16 bg-[#3B78C6] text-[#FAFAF8] overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/7af5fb8d48b36f26afd1e4edf19f8f9c.jpg"

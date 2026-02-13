@@ -57,27 +57,21 @@ export function HeroSection() {
             </p>
 
             <h1
-              className={`font-serif text-4xl md:text-6xl lg:text-7xl leading-[0.95] mb-8 transition-all duration-700 text-[#1A1A1A] ${
+              className={`font-display text-[2.8rem] md:text-[4.5rem] lg:text-[5.5rem] leading-none tracking-[-0.08em] mb-8 transition-all duration-700 text-[#3B78C6] uppercase ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
-              style={{ transitionDelay: `${baseDelay + 400}ms` }}
+              style={{ transitionDelay: `${baseDelay + 400}ms`, lineHeight: 0.75 }}
             >
-              <span className="block overflow-visible relative">
-                <span className={`block transition-transform duration-700 ${isLoaded ? 'translate-y-0' : 'translate-y-full'}`} style={{ transitionDelay: `${baseDelay + 500}ms` }}>
-                  <AnnotatedText annotation="highlight" delay={baseDelay - 200}>Long Live</AnnotatedText>
-                  <MarginNote side="right" delay={baseDelay - 100} random />
-                </span>
+              <span className={`block transition-transform duration-700 ${isLoaded ? 'translate-y-0' : 'translate-y-full'}`} style={{ transitionDelay: `${baseDelay + 500}ms` }}>
+                Long Live
               </span>
-              <span className="block overflow-visible relative">
-                <span className={`block transition-transform duration-700 ${isLoaded ? 'translate-y-0' : 'translate-y-full'}`} style={{ transitionDelay: `${baseDelay + 650}ms` }}>
-                  the <AnnotatedText annotation="circle" delay={baseDelay}>Long Form</AnnotatedText>.
-                  <MarginNote side="right" delay={baseDelay + 100} random />
-                </span>
+              <span className={`block transition-transform duration-700 ${isLoaded ? 'translate-y-0' : 'translate-y-full'}`} style={{ transitionDelay: `${baseDelay + 650}ms` }}>
+                the Long Form.
               </span>
             </h1>
 
             <p
-              className={`text-lg md:text-xl lg:text-2xl text-[#4A4A4A] font-serif italic mb-10 max-w-md transition-all duration-700 relative ${
+              className={`text-lg md:text-xl text-[#4A4A4A] italic mb-10 max-w-md transition-all duration-700 relative ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
               style={{ transitionDelay: `${baseDelay + 800}ms` }}

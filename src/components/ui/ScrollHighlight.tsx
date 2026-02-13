@@ -49,7 +49,7 @@ export function ScrollHighlight({
       ref={ref as any}
       className={cn('scroll-highlight', className)}
       style={{
-        backgroundImage: 'linear-gradient(to right, rgba(45, 74, 62, 0.3), rgba(45, 74, 62, 0.3))',
+        backgroundImage: 'linear-gradient(to right, rgba(59, 120, 198, 0.3), rgba(59, 120, 198, 0.3))',
         backgroundSize: `${highlightProgress * 100}% 40%`,
         backgroundPosition: 'left 85%',
         backgroundRepeat: 'no-repeat',

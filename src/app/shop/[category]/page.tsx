@@ -22,42 +22,24 @@ const categoryContent: Record<string, {
   prints: {
     title: 'Prints',
     titleAnnotation: 'highlight',
-    description: 'Museum-quality archival prints for walls that deserve literature. Typography that speaks to the reader who stayed.',
-    heroImage: '/images/df66b392638924a895cd0c1c78ebdbb2.jpg',
+    description: 'Limited edition typographic prints on museum-quality archival paper. Numbered, signed, and designed for walls that deserve literature.',
+    heroImage: '/site_photos/print_longlive.jpg',
     marginNotes: ['yes!', 'want', 'need'],
     scatteredNotes: ['art!', 'walls', 'perfect', 'love'],
     bottomQuote: 'Your walls should read as well as you do.',
   },
-  bookmarks: {
-    title: 'Bookmarks',
-    titleAnnotation: 'circle',
-    description: 'Because dog-earing is a crime. Mark your place with intention, with objects worthy of the pages they hold.',
-    heroImage: '/images/41e893d89a5edab55a6cf30298981869.jpg',
-    marginNotes: ['finally!', 'this', 'same'],
-    scatteredNotes: ['mark', 'place', 'hold', 'yes!'],
-    bottomQuote: 'The bookmark is the reader\'s most faithful companion.',
-  },
-  't-shirts': {
-    title: 'T-Shirts',
-    titleAnnotation: 'highlight',
-    description: 'Wear your reading on your sleeve. Literary declarations for those who believe reading is rebellion.',
-    heroImage: '/images/49b59d5866a63a2fe0bb03ea05ce649d.jpg',
-    marginNotes: ['wear it', 'bold', 'yes'],
-    scatteredNotes: ['style', 'read', 'wear', 'bold!'],
-    bottomQuote: 'Read the book. Wear the shirt. Be insufferable.',
-  },
   books: {
     title: 'Books',
     titleAnnotation: 'underline',
-    description: 'Curated editions for the discerning reader. Not just any books—the books that changed everything.',
-    heroImage: '/images/05224f277ba3667270902b448b936b64.jpg',
+    description: 'The classics, rebound. Bold typographic covers. Sewn bindings. The Long Form Press library.',
+    heroImage: '/site_photos/book_wh.jpg',
     marginNotes: ['curated', 'rare', 'essential'],
     scatteredNotes: ['read', 'pages', 'words', 'more!'],
     bottomQuote: 'Some books are meant to be owned, not borrowed.',
   },
 };
 
-const validCategories = ['prints', 'bookmarks', 't-shirts', 'books'];
+const validCategories = ['prints', 'books'];
 
 export default function CategoryPage({
   params
