@@ -63,7 +63,7 @@ export default function ShopPage() {
 
           {/* Bottom CTA */}
           <div className="mt-20 pt-12 border-t border-[#1A1A1A]/10 text-center relative">
-            <p className="font-serif text-xl text-[#4A4A4A] italic relative">
+            <p className="font-serif text-xl text-[#4A4A4A] relative">
               &ldquo;Read the book. <AnnotatedText annotation="highlight" delay={200}>Wear the shirt</AnnotatedText>. Be <AnnotatedText annotation="circle" delay={400}>insufferable</AnnotatedText>.&rdquo;
               <MarginNote side="right" delay={500}>goals</MarginNote>
               <MarginNote side="left" delay={600}>absolutely agree</MarginNote>

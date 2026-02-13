@@ -60,6 +60,7 @@ export function Marginalia({
       )}
       style={{
         fontFamily: 'Handwriting, cursive',
+        fontWeight: 'normal',
         transform: `rotate(${rotation}deg)`,
         opacity: isVisible ? 0.85 : 0,
         clipPath: `inset(0 ${100 - drawProgress * 100}% 0 0)`,

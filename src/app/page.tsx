@@ -27,7 +27,7 @@ export default function Home() {
       {/* Tagline Band */}
       <section className="bg-[#3B78C6] text-[#FAFAF8] py-6 relative overflow-visible">
         <Container>
-          <p className="text-center font-serif text-lg md:text-xl italic relative">
+          <p className="text-center text-lg md:text-xl relative">
             &ldquo;The Long Read, The <AnnotatedText annotation="circle" delay={1300} color="#FAFAF8">Short</AnnotatedText> Life.&rdquo;
             <MarginNote side="right" delay={1500} color="light" random />
           </p>
@@ -98,8 +98,8 @@ export default function Home() {
                   We make stuff for readers who <AnnotatedText annotation="highlight" delay={400}>finish the book</AnnotatedText>. Who&apos;ve argued about <AnnotatedText annotation="underline" delay={500}>translations</AnnotatedText>. Who have <AnnotatedText annotation="circle" delay={600}>Opinions</AnnotatedText> about adaptations. Who are, frankly, <AnnotatedText annotation="highlight" delay={650}>a bit much</AnnotatedText> at dinner parties.
                   <MarginNote side="left" delay={700} random />
                 </p>
-                <p className="text-lg italic text-[#3B78C6] relative">
-                  Yes, we&apos;re <AnnotatedText annotation="circle" delay={750} color="#3B78C6">pretentious</AnnotatedText>. But we&apos;ve <AnnotatedText annotation="highlight" delay={800}>earned it</AnnotatedText>. And if you&apos;re here, so have you.
+                <p className="text-lg text-[#3B78C6] relative">
+                  We&apos;re for the ones who <AnnotatedText annotation="highlight" delay={750}>stayed up too late</AnnotatedText>, turned <AnnotatedText annotation="circle" delay={800} color="#3B78C6">every page</AnnotatedText>, and never once skipped to the end.
                   <MarginNote side="right" delay={850} random />
                 </p>
               </div>
@@ -170,7 +170,7 @@ export default function Home() {
               <MarginNote side="left" delay={600} color="light" random />
             </blockquote>
             <p className="text-sm tracking-[0.2em] uppercase text-[#FAFAF8]/60 relative">
-              <AnnotatedText annotation="underline" delay={600} color="#FAFAF8">Pretension, Earned.</AnnotatedText>
+              <AnnotatedText annotation="underline" delay={600} color="#FAFAF8">Every Page, Earned.</AnnotatedText>
             </p>
           </div>
         </Container>
@@ -247,11 +247,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 via-transparent to-transparent pointer-events-none" />
         <Container className="relative z-10 h-full flex items-end pb-16">
           <div className="text-[#FAFAF8] relative">
-            <p className="font-serif text-2xl md:text-4xl italic mb-2 relative">
+            <p className="font-serif text-2xl md:text-4xl mb-2 relative">
               Because <AnnotatedText annotation="highlight" delay={200}>attention</AnnotatedText> is the <AnnotatedText annotation="circle" delay={400} color="#FAFAF8">rarest art</AnnotatedText>.
               <MarginNote side="right" delay={500} color="light" random />
             </p>
-            <p className="text-sm text-[#FAFAF8]/60 relative">
+            <p className="text-sm text-[#3B78C6] relative">
               For the reader who <AnnotatedText annotation="underline" delay={600} color="#FAFAF8">stayed</AnnotatedText>.
             </p>
           </div>

@@ -614,6 +614,7 @@ export function MarginNote({
       className={`${side === 'inline' ? 'relative' : 'absolute'} hidden lg:inline-block whitespace-nowrap pointer-events-none z-20 ${className}`}
       style={{
         fontFamily: 'Handwriting, cursive',
+        fontWeight: 'normal',
         fontSize: '1.8rem',
         lineHeight: 1.2,
         color: textColor,
@@ -676,6 +677,7 @@ export function ScatteredNote({
       className={`absolute hidden lg:block whitespace-nowrap pointer-events-none z-20 ${className}`}
       style={{
         fontFamily: 'Handwriting, cursive',
+        fontWeight: 'normal',
         fontSize: '1.8rem',
         lineHeight: 1.2,
         color: textColor,

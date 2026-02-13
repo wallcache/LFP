@@ -12,7 +12,7 @@ export function Footer() {
       <Container>
         <div className="flex flex-col items-center justify-between gap-6 py-12 md:flex-row md:py-16">
           {/* Tagline */}
-          <p className="text-lg italic text-[#4A4A4A]">
+          <p className="text-lg text-[#4A4A4A]">
             Read slowly or die trying.
           </p>
 
@@ -30,15 +30,6 @@ export function Footer() {
             >
               <FlipText>About</FlipText>
             </Link>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link-flip text-sm text-[#8A8A8A] transition-colors hover:text-[#1A1A1A]"
-              aria-label="Instagram"
-            >
-              <FlipText>Instagram</FlipText>
-            </a>
           </div>
 
           {/* Copyright */}

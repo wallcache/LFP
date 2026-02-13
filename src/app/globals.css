@@ -62,6 +62,7 @@ body {
 /* Typography Utilities */
 .font-serif {
   font-family: var(--font-serif);
+  letter-spacing: -0.05em;
 }
 
 .font-display {

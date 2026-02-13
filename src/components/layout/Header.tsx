@@ -131,6 +131,7 @@ function NavMarginNote({ show }: { show: boolean }) {
       className="absolute left-full ml-2 text-[#3B78C6] whitespace-nowrap pointer-events-none hidden lg:block"
       style={{
         fontFamily: 'Handwriting, cursive',
+        fontWeight: 'normal',
         fontSize: '1.2rem',
         transform: `rotate(${angle}deg)`,
         top: `${offsetY}px`,

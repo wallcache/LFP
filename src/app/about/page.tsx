@@ -31,11 +31,11 @@ export default function AboutPage() {
               <AnnotatedText annotation="underline" delay={200} color="#FAFAF8">About Us</AnnotatedText>
               <MarginNote side="right" delay={300} color="light" random />
             </p>
-            <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 relative">
-              For the <AnnotatedText annotation="highlight" delay={400}>Reader</AnnotatedText><br />Who <AnnotatedText annotation="circle" delay={600} color="#FAFAF8">Stayed</AnnotatedText>.
+            <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-[#3B78C6] relative">
+              For the <AnnotatedText annotation="highlight" delay={400}>Reader</AnnotatedText><br />Who <AnnotatedText annotation="circle" delay={600} color="#3B78C6">Stayed</AnnotatedText>.
               <MarginNote side="right" delay={700} color="light" random />
             </h1>
-            <p className="text-xl text-[#FAFAF8]/80 font-serif italic relative">
+            <p className="text-xl text-[#FAFAF8]/80 font-serif relative">
               <AnnotatedText annotation="highlight" delay={800}>Objects</AnnotatedText> for the <AnnotatedText annotation="circle" delay={1000} color="#FAFAF8">patient mind</AnnotatedText>.
               <MarginNote side="right" delay={1100} color="light" random />
             </p>
@@ -63,13 +63,12 @@ export default function AboutPage() {
                 <MarginNote side="right" delay={500} random />
               </p>
               <p className="text-lg leading-relaxed text-[#4A4A4A] relative">
-                Yes, we&apos;re <AnnotatedText annotation="circle" delay={800}>pretentious</AnnotatedText>. But we&apos;ve <AnnotatedText annotation="highlight" delay={850}>earned it</AnnotatedText>. And if you&apos;re here,
-                so have you.
+                We&apos;re for the ones who <AnnotatedText annotation="highlight" delay={800}>stayed up too late</AnnotatedText>, turned <AnnotatedText annotation="circle" delay={850}>every page</AnnotatedText>, and never once skipped to the end.
                 <MarginNote side="right" delay={500} random />
                 <MarginNote side="right" delay={500} random />
               </p>
               <div className="pt-4 relative">
-                <p className="font-serif text-2xl italic text-[#3B78C6] relative">
+                <p className="font-serif text-2xl text-[#3B78C6] relative">
                   &ldquo;Because you didn&apos;t <AnnotatedText annotation="highlight" delay={950}>sparknotes</AnnotatedText> your way through <AnnotatedText annotation="underline" delay={1000} color="#3B78C6">Dostoevsky</AnnotatedText>.&rdquo;
                   <MarginNote side="right" delay={500} random />
                 </p>
@@ -101,7 +100,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-[#1A1A1A]/40 pointer-events-none" />
         <Container className="relative z-10 h-full flex items-center justify-center">
-          <p className="font-serif text-3xl md:text-5xl text-[#FAFAF8] text-center italic">
+          <p className="font-serif text-3xl md:text-5xl text-[#FAFAF8] text-center">
             &ldquo;The Long Read, The Short Life.&rdquo;
           </p>
         </Container>
@@ -118,7 +117,7 @@ export default function AboutPage() {
           </h2>
 
           <div className="max-w-3xl mx-auto relative">
-            <p className="text-center text-xl text-[#4A4A4A] mb-12 font-serif italic relative">
+            <p className="text-center text-xl text-[#4A4A4A] mb-12 font-serif relative">
               The <AnnotatedText annotation="circle" delay={300}>Self-Aware Snob</AnnotatedText> Who&apos;s <AnnotatedText annotation="highlight" delay={400}>Actually Read The Books</AnnotatedText>
               <MarginNote side="right" delay={500} random />
               <HandwrittenArrow x="-8%" y="50%" delay={550} direction="left" size="lg" />
@@ -171,7 +170,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <p className="text-center mt-12 font-serif text-lg italic text-[#4A4A4A] relative">
+            <p className="text-center mt-12 font-serif text-lg text-[#4A4A4A] relative">
               The vibe: &ldquo;<AnnotatedText annotation="highlight" delay={1000}>Yes, I&apos;m annoying.</AnnotatedText> <AnnotatedText annotation="underline" delay={1050}>Yes, I&apos;m right.</AnnotatedText>&rdquo;
               <MarginNote side="right" delay={500} random />
             </p>
@@ -215,7 +214,7 @@ export default function AboutPage() {
                 <MarginNote side="right" delay={500} random />
                 <MarginNote side="right" delay={500} random />
               </p>
-              <p className="font-serif text-xl italic text-[#3B78C6] relative">
+              <p className="font-serif text-xl text-[#3B78C6] relative">
                 But <AnnotatedText annotation="underline" delay={950} color="#3B78C6">never sneer</AnnotatedText> at someone reading their <AnnotatedText annotation="highlight" delay={980}>first classic</AnnotatedText>.
                 The joke is always &ldquo;we&apos;re ridiculous, but <AnnotatedText annotation="circle" delay={1000} color="#3B78C6">the books are actually good</AnnotatedText>.&rdquo;
                 <MarginNote side="right" delay={500} random />
@@ -236,7 +235,7 @@ export default function AboutPage() {
           />
         </div>
         <Container className="relative z-10">
-          <blockquote className="text-center font-serif text-2xl md:text-4xl italic">
+          <blockquote className="text-center font-serif text-2xl md:text-4xl">
             &ldquo;Because attention is the rarest art.&rdquo;
           </blockquote>
         </Container>
@@ -261,7 +260,7 @@ export default function AboutPage() {
               <div className="absolute bottom-0 left-0 right-0 p-6 text-[#FAFAF8]">
                 <h3 className="font-serif text-xl mb-2">Volume I</h3>
                 <p className="text-[#FAFAF8]/80 mb-1">For Readers Who Stayed</p>
-                <p className="text-sm text-[#FAFAF8]/60 italic">The foundational collection</p>
+                <p className="text-sm text-[#FAFAF8]/60">The foundational collection</p>
               </div>
             </div>
             <div className="group relative aspect-[3/4] overflow-hidden">
@@ -275,7 +274,7 @@ export default function AboutPage() {
               <div className="absolute bottom-0 left-0 right-0 p-6 text-[#FAFAF8]">
                 <h3 className="font-serif text-xl mb-2">Volume II</h3>
                 <p className="text-[#FAFAF8]/80 mb-1">The Obsessions</p>
-                <p className="text-sm text-[#FAFAF8]/60 italic">Madness, passion, Dostoevsky, Brontë</p>
+                <p className="text-sm text-[#FAFAF8]/60">Madness, passion, Dostoevsky, Brontë</p>
               </div>
             </div>
             <div className="group relative aspect-[3/4] overflow-hidden">
@@ -289,7 +288,7 @@ export default function AboutPage() {
               <div className="absolute bottom-0 left-0 right-0 p-6 text-[#FAFAF8]">
                 <h3 className="font-serif text-xl mb-2">Volume III</h3>
                 <p className="text-[#FAFAF8]/80 mb-1">The Dreamers</p>
-                <p className="text-sm text-[#FAFAF8]/60 italic">Kafka, Woolf, Borges, Murakami</p>
+                <p className="text-sm text-[#FAFAF8]/60">Kafka, Woolf, Borges, Murakami</p>
               </div>
             </div>
           </div>

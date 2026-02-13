@@ -2,6 +2,95 @@ import { Product } from '@/types/shopify';
 
 // Placeholder products for development before Shopify is connected
 export const placeholderProducts: Product[] = [
+  // --- BOOKS ---
+  {
+    id: 'gid://shopify/Product/5',
+    handle: 'moby-dick',
+    title: 'Moby Dick',
+    description: 'Herman Melville\'s obsessive masterpiece, rebound for the Long Form Press library. Bold typographic cover. Sewn binding. The whale deserved better design.',
+    descriptionHtml: '<p>Herman Melville\'s obsessive masterpiece, rebound for the Long Form Press library.</p><p>Bold typographic cover. Sewn binding. The whale deserved better design.</p>',
+    featuredImage: {
+      url: '/site_photos/book_MODBDYSID.jpg',
+      altText: 'Moby Dick by Herman Melville — Long Form Press edition',
+      width: 800,
+      height: 1000,
+    },
+    images: [
+      {
+        url: '/site_photos/book_MODBDYSID.jpg',
+        altText: 'Moby Dick by Herman Melville — Long Form Press edition',
+        width: 800,
+        height: 1000,
+      },
+    ],
+    price: '14.99',
+    compareAtPrice: null,
+    currencyCode: 'GBP',
+    variants: [
+      {
+        id: 'gid://shopify/ProductVariant/9',
+        title: 'Paperback',
+        availableForSale: true,
+        price: '14.99',
+        currencyCode: 'GBP',
+        selectedOptions: [{ name: 'Format', value: 'Paperback' }],
+      },
+    ],
+    options: [
+      {
+        id: 'gid://shopify/ProductOption/5',
+        name: 'Format',
+        values: ['Paperback'],
+      },
+    ],
+    tags: ['book', 'classic', 'literary', 'melville'],
+    productType: 'Books',
+    availableForSale: true,
+  },
+  {
+    id: 'gid://shopify/Product/6',
+    handle: 'wuthering-heights',
+    title: 'Wuthering Heights',
+    description: 'Emily Brontë\'s dark, windswept masterwork, rebound for the Long Form Press library. Bold typographic cover. Sewn binding. Heathcliff would approve.',
+    descriptionHtml: '<p>Emily Brontë\'s dark, windswept masterwork, rebound for the Long Form Press library.</p><p>Bold typographic cover. Sewn binding. Heathcliff would approve.</p>',
+    featuredImage: {
+      url: '/site_photos/book_wh.jpg',
+      altText: 'Wuthering Heights by Emily Brontë — Long Form Press edition',
+      width: 800,
+      height: 1000,
+    },
+    images: [
+      {
+        url: '/site_photos/book_wh.jpg',
+        altText: 'Wuthering Heights by Emily Brontë — Long Form Press edition',
+        width: 800,
+        height: 1000,
+      },
+    ],
+    price: '14.99',
+    compareAtPrice: null,
+    currencyCode: 'GBP',
+    variants: [
+      {
+        id: 'gid://shopify/ProductVariant/11',
+        title: 'Paperback',
+        availableForSale: true,
+        price: '14.99',
+        currencyCode: 'GBP',
+        selectedOptions: [{ name: 'Format', value: 'Paperback' }],
+      },
+    ],
+    options: [
+      {
+        id: 'gid://shopify/ProductOption/6',
+        name: 'Format',
+        values: ['Paperback'],
+      },
+    ],
+    tags: ['book', 'classic', 'literary', 'bronte'],
+    productType: 'Books',
+    availableForSale: true,
+  },
   // --- PRINTS ---
   {
     id: 'gid://shopify/Product/1',
@@ -211,117 +300,12 @@ export const placeholderProducts: Product[] = [
     productType: 'Prints',
     availableForSale: true,
   },
-  // --- BOOKS ---
-  {
-    id: 'gid://shopify/Product/5',
-    handle: 'moby-dick',
-    title: 'Moby Dick',
-    description: 'Herman Melville\'s obsessive masterpiece, rebound for the Long Form Press library. Bold typographic cover. Sewn binding. The whale deserved better design.',
-    descriptionHtml: '<p>Herman Melville\'s obsessive masterpiece, rebound for the Long Form Press library.</p><p>Bold typographic cover. Sewn binding. The whale deserved better design.</p>',
-    featuredImage: {
-      url: '/site_photos/book_MODBDYSID.jpg',
-      altText: 'Moby Dick by Herman Melville — Long Form Press edition',
-      width: 800,
-      height: 1000,
-    },
-    images: [
-      {
-        url: '/site_photos/book_MODBDYSID.jpg',
-        altText: 'Moby Dick by Herman Melville — Long Form Press edition',
-        width: 800,
-        height: 1000,
-      },
-    ],
-    price: '24.00',
-    compareAtPrice: null,
-    currencyCode: 'GBP',
-    variants: [
-      {
-        id: 'gid://shopify/ProductVariant/9',
-        title: 'Hardcover',
-        availableForSale: true,
-        price: '24.00',
-        currencyCode: 'GBP',
-        selectedOptions: [{ name: 'Format', value: 'Hardcover' }],
-      },
-      {
-        id: 'gid://shopify/ProductVariant/10',
-        title: 'Paperback',
-        availableForSale: true,
-        price: '16.00',
-        currencyCode: 'GBP',
-        selectedOptions: [{ name: 'Format', value: 'Paperback' }],
-      },
-    ],
-    options: [
-      {
-        id: 'gid://shopify/ProductOption/5',
-        name: 'Format',
-        values: ['Hardcover', 'Paperback'],
-      },
-    ],
-    tags: ['book', 'classic', 'literary', 'melville'],
-    productType: 'Books',
-    availableForSale: true,
-  },
-  {
-    id: 'gid://shopify/Product/6',
-    handle: 'wuthering-heights',
-    title: 'Wuthering Heights',
-    description: 'Emily Brontë\'s dark, windswept masterwork, rebound for the Long Form Press library. Bold typographic cover. Sewn binding. Heathcliff would approve.',
-    descriptionHtml: '<p>Emily Brontë\'s dark, windswept masterwork, rebound for the Long Form Press library.</p><p>Bold typographic cover. Sewn binding. Heathcliff would approve.</p>',
-    featuredImage: {
-      url: '/site_photos/book_wh.jpg',
-      altText: 'Wuthering Heights by Emily Brontë — Long Form Press edition',
-      width: 800,
-      height: 1000,
-    },
-    images: [
-      {
-        url: '/site_photos/book_wh.jpg',
-        altText: 'Wuthering Heights by Emily Brontë — Long Form Press edition',
-        width: 800,
-        height: 1000,
-      },
-    ],
-    price: '24.00',
-    compareAtPrice: null,
-    currencyCode: 'GBP',
-    variants: [
-      {
-        id: 'gid://shopify/ProductVariant/11',
-        title: 'Hardcover',
-        availableForSale: true,
-        price: '24.00',
-        currencyCode: 'GBP',
-        selectedOptions: [{ name: 'Format', value: 'Hardcover' }],
-      },
-      {
-        id: 'gid://shopify/ProductVariant/12',
-        title: 'Paperback',
-        availableForSale: true,
-        price: '16.00',
-        currencyCode: 'GBP',
-        selectedOptions: [{ name: 'Format', value: 'Paperback' }],
-      },
-    ],
-    options: [
-      {
-        id: 'gid://shopify/ProductOption/6',
-        name: 'Format',
-        values: ['Hardcover', 'Paperback'],
-      },
-    ],
-    tags: ['book', 'classic', 'literary', 'bronte'],
-    productType: 'Books',
-    availableForSale: true,
-  },
 ];
 
 // Category data
 export const categories = [
-  { handle: 'prints', title: 'Prints', description: 'Limited edition typographic prints for literary walls.' },
   { handle: 'books', title: 'Books', description: 'Classics rebound for the discerning reader.' },
+  { handle: 'prints', title: 'Prints', description: 'Limited edition typographic prints for literary walls.' },
 ];
 
 // Helper to get products by category

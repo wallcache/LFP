@@ -71,7 +71,7 @@ export function HeroSection() {
             </h1>
 
             <p
-              className={`text-lg md:text-xl text-[#4A4A4A] italic mb-10 max-w-md transition-all duration-700 relative ${
+              className={`text-lg md:text-xl text-[#4A4A4A] mb-10 max-w-md transition-all duration-700 relative ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
               style={{ transitionDelay: `${baseDelay + 800}ms` }}
